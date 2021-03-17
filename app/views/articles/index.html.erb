@@ -1,0 +1,17 @@
+<h1>List Of Articles</h1>
+Our blog has <%= Article.public_count %> public articles are :
+<ul>
+	<% @articles.each do |article| %>
+	<li>
+		<a href="/articles/<%= article.id %>">
+		<%= article.title %></a>
+		<%= link_to "Edit", edit_article_path(article) %>
+		<%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure?" } %>
+	</li>
+	<% end %>
+</ul>
+
+
+<%= link_to "Articles", new_article_path, remote: true %>
+<div id = 'new_article'></div>
+<div id = 'create_article'></div>
