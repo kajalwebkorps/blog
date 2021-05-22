@@ -1,0 +1,18 @@
+bugs in Recruiter
+
+1. while adding links ----> unpermitted parameter links[] 500error
+3. while adding skills  --->> 500 error
+2. upload csv file getting 404 error
+4. schedule interview emails not send
+
+
+
+findings
+1. when new user register get email to user
+2. user can create note
+3. when user create organization get email to user
+4
+
+
+
+

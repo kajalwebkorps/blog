@@ -1,9 +1,7 @@
 class ArticlesController < ApplicationController
   
-  # /articles
   def index
   	@articles = Article.all
-    #render json: @articles
   end
 
   def all_article
@@ -19,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    index   #master
+    index
   	@article = Article.new(article_params)
     respond_to do |format|
     	if @article.save
