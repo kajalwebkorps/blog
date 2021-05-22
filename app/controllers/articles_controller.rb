@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    index
+    index   #master
   	@article = Article.new(article_params)
     respond_to do |format|
     	if @article.save
